@@ -1,4 +1,4 @@
-/*Program for getting size of data types*/
+/*Program for getting size of data types hopefully*/
 
 #include <stdio.h>
 
