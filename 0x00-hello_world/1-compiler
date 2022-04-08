@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S $CFILE > c | mv *.c *.o
+gcc -S $CFILE > c | rename  .c .o *.c
