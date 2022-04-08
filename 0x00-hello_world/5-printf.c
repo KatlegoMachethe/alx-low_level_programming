@@ -1,6 +1,7 @@
 /*This programe will just print anstatement with printf*/
 
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - This is our canvas
