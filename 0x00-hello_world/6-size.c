@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - Just like any prformer needs a stage, the is the stage for our program to perform
+ * main - body in here
  * Return: 0 for working code, otherwise 1
  */
 int main(void)
