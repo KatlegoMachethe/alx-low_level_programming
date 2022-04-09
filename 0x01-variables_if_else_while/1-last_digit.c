@@ -1,3 +1,4 @@
+/*Progrm written in betty style*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
@@ -21,7 +22,7 @@ int main(void)
 	} else if (lastnum == 0)
 	{
 		printf("Last digit of %i is %i and is zero\n", n, lastnum);
-	} else if ((lastnum > 5) && (lastnum != 0))
+	} else if ((lastnum < 6) && (lastnum != 0))
 	{
 		printf("Last digit of %i is %i and is less than 6 and not 0\n", n, lastnum);
 	}
