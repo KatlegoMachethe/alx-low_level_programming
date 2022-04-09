@@ -7,10 +7,9 @@
  */
 int main(void)
 {
-	int count;
-	char alphabet;
+	char count, alphabet;
 
-	for (count = 0; count <= 10; count++)
+	for (count = '0'; count <= '9'; count++)
 		putchar(count);
 	for (alphabet = 'a'; alphabet <= 'f'; alphabet++)
 		putchar(alphabet);
