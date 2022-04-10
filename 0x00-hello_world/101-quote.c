@@ -7,10 +7,8 @@
  */
 int main(void)
 {
-	char quote1[] = "and that piece of art is useful\" - D";
-	char quote2[] = "ora Korpar, 2015-10-19";
+	char quote1[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	write(1, quote1, sizeof(quote1));
-	write(1, quote2, sizeof(quote2));
+	write(1, quote1, 59);
 	return (1);
 }
