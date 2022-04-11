@@ -27,9 +27,12 @@ int main(void)
 					putchar(num1);
 					putchar(num2);
 					putchar(num3);
-					putchar(',');
-					putchar(' ');
 
+					if (num1 + num2 + num3 != 7 + 8 + 9)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
