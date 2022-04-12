@@ -7,6 +7,9 @@
  */
 int main(void)
 {
-	write(1, "_putchar\n", 9);
+	char c[] = "_putchar";
+
+	_putchar(c);
+	_putchar('\n');
 	return (0);
 }
