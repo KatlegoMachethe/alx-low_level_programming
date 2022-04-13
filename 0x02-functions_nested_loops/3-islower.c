@@ -7,10 +7,8 @@
  */
 int _islower(int c)
 {
-	char ch = '0' + c;
-
-	if (ch >= 'A' && ch <= 'Z')
-		return (0);
-	else if (ch >= 'a' && ch <= 'z')
+	if (c >= 65 && c <= 90)
+		eturn (0);
+	else
 		return (1);
 }
