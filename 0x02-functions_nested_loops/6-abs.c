@@ -2,7 +2,7 @@
 
 /**
  * _abs - Computed absolute value of integer
- * @int: Integer argument
+ * @n: Integer argument
  *
  * Return: Integer value
  */
