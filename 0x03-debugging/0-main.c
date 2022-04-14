@@ -4,6 +4,7 @@
  * main - Test is number is zero or not
  * Return: 0
  */
+
 int main(void)
 {
 	int i;
