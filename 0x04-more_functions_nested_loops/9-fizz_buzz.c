@@ -29,10 +29,7 @@ void fizz_buzz(void)
 		{
 			printf("%d", number);
 		}
-		if (number != 100)
-		{
-			printf(" ");
-		}
+		printf(" ");
 	}
 	printf("\n");
 }
