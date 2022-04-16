@@ -15,15 +15,15 @@ void fizz_buzz(void)
 	{
 		if (number % 3 == 0)
 		{
-			printf("Fizz");
+			printf("%s", "Fizz");
 		}
 		else if (number % 5 == 0)
 		{
-			printf("Buzz");
+			printf("%s", "Buzz");
 		}
 		else if (number % 3 == 0 && number % 5 == 0)
 		{
-			printf("FizzBuzz");
+			printf("%s", "FizzBuzz");
 		}
 		else
 		{
