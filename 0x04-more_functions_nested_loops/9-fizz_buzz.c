@@ -31,9 +31,9 @@ int main(void)
 		}
 		if (number != 100)
 		{
-			printf(" ");
+			_putchar(' ');
 		}
 	}
-	printf("\n");
+	_putchar('\n');
 	return (0);
 }
