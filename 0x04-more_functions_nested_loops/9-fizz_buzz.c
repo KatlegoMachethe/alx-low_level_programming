@@ -31,7 +31,7 @@ void fizz_buzz(void)
 		}
 		if (number != 100)
 		{
-			_putchar(' ');
+			printf(" ");
 		}
 	}
 	printf("\n");
