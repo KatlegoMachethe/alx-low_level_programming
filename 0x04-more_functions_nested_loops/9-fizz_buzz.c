@@ -4,7 +4,7 @@
 
 /**
  * main - prints numbers from 1 to 100
- * Return: void
+ * Return: 0 always
  */
 
 int main(void)
@@ -29,7 +29,10 @@ int main(void)
 		{
 			printf("%d", number);
 		}
-		printf(" ");
+		if (number != 100)
+		{
+			printf(" ");
+		}
 	}
 	printf("\n");
 	return (0);
