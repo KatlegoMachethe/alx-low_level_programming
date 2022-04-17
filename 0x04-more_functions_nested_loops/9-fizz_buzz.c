@@ -29,9 +29,9 @@ int main(void)
 		}
 		if (number != 100)
 		{
-			putchar(' ');
+			printf(" ");
 		}
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
