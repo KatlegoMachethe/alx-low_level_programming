@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -10,7 +9,7 @@ int main(void)
 {
 	int number;
 
-	for (number = 1; number < 101; number++)
+	for (number = 1; number <= 100; number++)
 	{
 		if (number % 3 == 0)
 		{
