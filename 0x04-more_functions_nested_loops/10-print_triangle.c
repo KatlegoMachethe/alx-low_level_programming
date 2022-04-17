@@ -9,7 +9,9 @@
 
 void print_triangle(int size)
 {
-	int height, space, base;
+	int height;
+	int space;
+	int base;
 
 	if (size <= 0)
 	{
@@ -17,7 +19,7 @@ void print_triangle(int size)
 	}
 	for (height = 0; height < size; height++)
 	{
-		for (space = 0; space < size - height; space++)
+		for (space = 0; space < (size - height); space++)
 		{
 			_putchar(' ');
 		}
