@@ -25,4 +25,6 @@ void fizz_buzz(void);
 
 void print_triangle(int);
 
+void print_number(int);
+
 #endif
