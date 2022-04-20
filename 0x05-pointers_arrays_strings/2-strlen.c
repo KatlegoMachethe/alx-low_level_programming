@@ -9,8 +9,12 @@
 
 int _strlen(char *s)
 {
-	char pointer;
+	int count;
 
-	pointer = *s;
-	return (sizeof(pointer));
+	while (*s != '\0')
+	{
+		s++;
+		count++;
+	}
+	return (count);
 }
