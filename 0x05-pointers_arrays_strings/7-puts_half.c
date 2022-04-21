@@ -22,7 +22,7 @@ void puts_half(char *str)
 	else if (count % 2 != 0)
 	{
 		half = (count - 1) / 2;
-		while (str[half + 2] != '\0')
+		while (str[half + 3] < '\0')
 		{
 			_putchar(str[half]);
 			half++;
@@ -31,7 +31,7 @@ void puts_half(char *str)
 	else
 	{
 		iter = count / 2;
-		while (str[iter + 1] != '\0')
+		while (str[iter + 1] < '\0')
 		{
 			_putchar(str[iter]);
 			iter++;
