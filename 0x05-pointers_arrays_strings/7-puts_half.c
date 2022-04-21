@@ -15,14 +15,10 @@ void puts_half(char *str)
 	{
 		count++;
 	}
-	if (count == 0)
-	{
-		_putchar(str[count]);
-	}
-	else if (count % 2 != 0)
+	if (count % 2 != 0)
 	{
 		half = (count - 1) / 2;
-		while (str[half + 3] < '\0')
+		while (str[half + 1] < count - 1)
 		{
 			_putchar(str[half]);
 			half++;
@@ -31,7 +27,7 @@ void puts_half(char *str)
 	else
 	{
 		iter = count / 2;
-		while (str[iter + 1] < '\0')
+		while (str[iter] != '\0')
 		{
 			_putchar(str[iter]);
 			iter++;
