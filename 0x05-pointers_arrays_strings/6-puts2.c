@@ -10,11 +10,11 @@ void puts2(char *str)
 {
 	int iter = 0;
 
-	while (s[iter] != '\0')
+	while (str[iter] != '\0')
 	{
 		if (iter % 2 == 0)
 		{
-			_putchar(s[iter]);
+			_putchar(str[iter]);
 		}
 		iter++;
 	}
