@@ -18,7 +18,7 @@ void puts_half(char *str)
 	if (count % 2 != 0)
 	{
 		half = (count - 1) / 2;
-		while (str[half + 1] < count - 1)
+		while (str[half + 1] < '\0')
 		{
 			_putchar(str[half]);
 			half++;
