@@ -1,23 +1,6 @@
 #include "main.h"
 
 /**
- * _strlen - get the lemgth of a string
- * @s: a string
- * Return; integer
- */
-
-int _strlen(char *s)
-{
-	int len = 0;
-
-	while (s[len] != '\0')
-	{
-		len++;
-	}
-	return (len);
-}
-
-/**
  * _strcat - Concatenates two strings
  * @src: First string input
  * @dest: Second string input
@@ -26,18 +9,18 @@ int _strlen(char *s)
 
 char *_strcat(char *dest, char *src)
 {
-	int dest_len;
-	int src_len;
-
-	for (dest_len = 0; dest_len < _strlen(dest); dest_len++)
+	int len1, len2;
+	
+	len1 = 0;
+	while (dest[len1] != '\0')
 	{
-		_putchar(dest[dest_len]);
+		len1++;
 	}
-	_putchar(' ');
-	for (src_len = 0; src_len < _strlen(src); src_len++)
+	for (len2 = 0; str[len2] != '\0'; len++)
 	{
-		_putchar(src[src_len]);
+		dest[len1] = src[len2];
+		len1++;
 	}
-	src[src_len] = '\0';
-	return (dest, src);
+	dest[len1] = '\0';
+	return (destr);
 }
