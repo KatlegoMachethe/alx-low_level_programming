@@ -6,38 +6,21 @@
  * Return: the encoded string
  */
 
-char *leet(char *s)
+char *leet(char *str)
 {
-	int i = 0;
+	int i, j;
+	char letter[] = "aAeEoOtTlL";
+	char number[11] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 
-	while (s[i] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		switch (s[i])
+		for (j = 0; letter[j] != '\0'; j++)
 		{
-			case 'a':
-			case 'A':
-				s[i] = '4';
-				break;
-			case 'e':
-			case 'E':
-				s[i] = '3';
-				break;
-			case 'o':
-			case 'O':
-				s[i] = '0';
-				break;
-			case 't':
-			case 'T':
-				s[i] = '7';
-				break;
-			case 'l':
-			case 'L':
-				s[i] = '1';
-				break;
-			default:
-				s[i] = s[i];
+			if (str[i] == letter[j])
+			{
+				str[i] = number[j];
+			}
 		}
-		i++;
 	}
-	return (s);
+	return (str);
 }
