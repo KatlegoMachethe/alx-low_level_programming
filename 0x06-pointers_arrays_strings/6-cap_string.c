@@ -36,8 +36,9 @@ char *cap_string(char *str)
 				}
 				break;
 			default:
-				i++;
+				str[i] = str[i];
 		}
+		i++;
 	}
 	return (str);
 }
