@@ -32,6 +32,7 @@ char *cap_string(char *str)
 				if (str[i] >= 'a' && str[i] <= 'z')
 				{
 					str[i] = str[i] - 32;
+					/*32 is difference between upper and lower case in ascii*/
 				}
 				break;
 			default:
