@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _poe_recursion - Prints the value of x raised to the power of y
+ * _pow_recursion - Prints the value of x raised to the power of y
  * @x: First integer input
  * @y: Second integer input
  * Return: int
