@@ -34,7 +34,6 @@ char *_strcpy(char *dest, char *src)
 	{
 		dest[index] = src[index];
 	}
-	dest[index + 1] = '\0';
 	return (dest);
 }
 
@@ -49,42 +48,30 @@ char *_strcpy(char *dest, char *src)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dogo;
-	char *name_cpy, owner_cpy;
 
 	dogo = malloc(sizeof(dog_t));
 	if (dogo == NULL)
 	{
+		free(dogo);
 		return (NULL);
 	}
-	dogo->name = name;
-	if (name != NULL)
+	dogo->name = malloc(_strlen(name) * sizeof(dogo->name));
+	if (dogo->name == NULL)
 	{
-		name_cpy = malloc(_strlen(name) + 1);
-		if (name_cpy == NULL)
-		{
-			free(dogo);
-			return (NULL);
-		}
-		dogo->name = _strcpy(name_cpy, name);
+		free(dogo->name);
+		free(dogo);
+		return (NULL);
 	}
-	else
+	dogo->name = _strcpy(dogo->name, name);
+	dogo->age = age;
+	dogo->owner = malloc(_strlen(owner) * sizeof(dogo->owner));
+	if (dogo->owner == NULL)
 	{
-		dogo->name = NULL;
+		free(dogo->owner);
+		free(dogo->name);
+		free(dogo);
+		return (NULL);
 	}
-	if (owner != NULL)
-	{
-		owner_cpy = malloc(_strlen(owner) + 1);
-		if (owner_cpy == NULL)
-		{
-			free(name_cpy);
-			free(dogo);
-			return (NULL);
-		}
-		dogo->owner = _strcpy(owner_cpy, owner);
-	}
-	else
-	{
-		dogo->owner = owner;
-	}
+	dogo->owner = _strcpy(dogo->owner, owner);
 	return (dogo);
 }

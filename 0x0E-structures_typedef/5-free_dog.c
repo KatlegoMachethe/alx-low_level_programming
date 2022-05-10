@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * free_dog - frees the dogs
@@ -7,7 +8,7 @@
  * Return: void
  */
 
-void free_dog(dot_t *d)
+void free_dog(dog_t *d)
 {
 	if (d)
 	{
