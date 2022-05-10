@@ -9,17 +9,16 @@
 
 void free_dog(dot_t *d)
 {
-	if (d == NULL)
+	if (d)
 	{
-		return;
+		if (d->name)
+		{
+			free(d->name);
+		}
+		if (d->owner)
+		{
+			free(d->owner);
+		}
+		free(d);
 	}
-	if (d->name)
-	{
-		free(d->name);
-	}
-	if (d->owner)
-	{
-		free(d->owner);
-	}
-	free(d);
 }
