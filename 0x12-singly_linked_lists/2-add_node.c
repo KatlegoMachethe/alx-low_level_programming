@@ -7,11 +7,11 @@
  * Return: lenght of string
  */
 
-int _strlen(const char *s)
+size_t _strlen(const char *s)
 {
-	int length;
+	size_t length;
 
-	for (length = 0; s[length] != '\0'; length++)
+	for (length = 0; s[length]; length++)
 		;
 	return (length);
 }
@@ -37,5 +37,5 @@ list_t *add_node(list_t **head, const char *str)
 	node->len = _strlen(str);
 	node->next = *head;
 	*head = node;
-	return (node);
+	return (*head);
 }
