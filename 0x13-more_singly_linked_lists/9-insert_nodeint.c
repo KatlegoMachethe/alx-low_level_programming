@@ -9,7 +9,7 @@
  * Return: listint_t data type
  */
 
-listint_t *insert_nodeint_at_index(listint_t *head, unsigned int idx, int n)
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *new_node, *holdr = *head;
 	unsigned int count;
@@ -35,11 +35,11 @@ listint_t *insert_nodeint_at_index(listint_t *head, unsigned int idx, int n)
 		if (count == idx - 1)
 		{
 			new_node->next = holdr->next;
-			temp->next = new_node;
+			holdr->next = new_node;
 			return (new_node);
 		}
 		else
-			holdr = temp->next;
+			holdr = holdr->next;
 	}
 	return (NULL);
 }
