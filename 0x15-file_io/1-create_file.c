@@ -31,17 +31,21 @@ int create_file(const char *filename, char *text_content)
 {
 	int file,  writing;
 
-	if (filename == NULL)
+	if (filename == NULL || text_content == NULL)
 		return (-1);
 
 	file = open(filename, O_RDWR | O_CREAT, 0600);
 	if (file == -1)
 		return (-1);
-	if (text_content == NULL)
-		return (-1);
-	writing = write(file, text_content, _strlen(text_content));
-	if (writing == -1 || writing != _strlen(text_content))
-		return (-1);
+	
+	if (text_content != NULL)
+	{
+		writing = write(file, text_content, _strlen(text_content));
+		if (writing == -1 )
+		{
+			close(file);
+			return (-1);
+		}
 
 	close(file);
 	return (1);
